@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        margin:0;
+      }
+
+      #link1{
+        text-decoration:none;
+        color:white;
+        font-family:arial;
+      }
+      nav ul{
+        padding:0;
+        margin:0;
+        list-style-type:none;
+        display:flex;
+        justify-content:flex-end;
+        padding-right:100px;
+        background-color:#000000;
+      }
+      nav ul li{
+        padding:20px 10px;
+        color:white;
+      }
+      #link1:hover{
+        color:orange;
+      }
+      li:hover{
+        background-color:darkslategrey;
+        color:orange
+      }
+      @media(max-width:786px){
+        nav ul{
+          flex-direction:column;
+          padding:0;
+          text-align:center;
+        }
+      }
+      .firstcontainer{
+        box-sizing:border-box;
+      }
+      @media(min-width:786px){
+      .firstcontainer{
+        display:flex;
+      }
+    }
+      #para1{
+
+        padding:20px;
+        flex:2;
+      }
+      #para1 h2{
+        font:700 30px arial;
+      }
+      #para1 h2 span{
+        color:orange;
+      }
+      #para1 p{
+        font:500 15px arial;
+      }
+      #img1{
+        flex:1;
+        filter:grayscale(70%);
+      }
+      #img1 img{
+        max-width:"100%";
+      }
+      .secondcontainer{
+        background-image: url('img/about2.jpg');
+        background-position: center;
+        background-size: cover;
+        height:700px;
+        filter:grayscale(30%);
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+      }
+      #box1{
+        display:flex;
+        align-items:center;
+        background-color:rgba(240,240,240,0.7);
+        height:auto;
+        margin:auto;
+        width:80%;
+        padding:5px;
+      }
+
+      #box1 p{
+        padding:20px;
+        font:500 15px arial;
+      }
+      .boxes{
+        display:flex;
+        flex-direction:column;
+      }
+      .boxes h2{
+        margin:auto;
+        font:700 40px arial;
+        color:black;
+        padding:10px;
+        background-color:rgba(240,240,240,0.7);
+        margin-bottom: 40px;
+      }
+      footer{
+        text-align:center;
+        color:white;
+        background-color:black;
+        font:500 15px arial;
+        margin:0;
+        padding:10px;
+      }
+  </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="link1">Home</a></li>
+        <li><a href="#" id="link1">About</a></li>
+        <li><a href="contactpage.html" id="link1">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="firstcontainer">
+      <div id="para1">
+        <h2><span>About</span> Hotel BT</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div id="img1">
+        <img src="img/aboutimg.jpg" alt="Sample Image" height="400px">
+      </div>
+    </div>
+    <div class="secondcontainer">
+      <div class="boxes">
+        <h2>What Our Guests Say</h2>
+        <br>
+        <div id="box1">
+          <img src="img/girl1.jpg" alt="sample Image" width="100px" height="120px">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <br><br>
+        <div id="box1">
+          <img src="img/girl2.jpg" alt="sample Image" width="100px" height="120px">
+          <p>Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+      <p>Hotel BT &copy;2019, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

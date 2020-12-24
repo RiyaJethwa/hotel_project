@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="webfonts" rel="stylesheet">
+    <style>
+      body{
+        margin:0;
+      }
+      #link1{
+        text-decoration:none;
+        color:white;
+        font-family:arial;
+      }
+      nav ul{
+        padding:0;
+        margin:0;
+        list-style-type:none;
+        display:flex;
+        justify-content:flex-end;
+        padding-right:100px;
+        background-color:#000000;
+      }
+      nav ul li{
+        padding:20px 10px;
+        color:white;
+      }
+      #link1:hover{
+        color:orange;
+      }
+      li:hover{
+        background-color:darkslategrey;
+        color:orange
+      }
+      @media(max-width:786px){
+        nav ul{
+          flex-direction:column;
+          padding:0;
+          text-align:center;
+        }
+      }
+        @media(min-width:786px){
+        .container2{
+          display:flex;
+        }
+        }
+        .box1{
+          padding:30px;
+          text-align:center;
+          font:500 15px arial;
+          background-color:#3c3c3c;
+          color:white;
+          flex:1;
+        }
+        #tags{
+          font-weight:700;
+        }
+        footer{
+          text-align:center;
+          color:white;
+          background-color:black;
+          font:500 15px arial;
+          margin:0;
+          padding:10px;
+        }
+        span{
+          color:orange;
+        }
+        section h1{
+          font:700 35px arial;
+        }
+        section p{
+          font:500 15px arial;
+        }
+        #formsection{
+          margin-bottom:20px;
+          font:500 15px arial;
+        }
+        #formsection input[type=text],[type=email]{
+          width:100%;
+          padding:10px;
+          border:2px lightgrey solid;
+        }
+        #formsection textarea{
+          width:100%;
+          padding:25px;
+          border:2px lightgrey solid;
+        }
+        #formsection input[type=submit]{
+          padding:10px;
+          border:none;
+          background-color:darkgrey;
+          color:white;
+          font:600 15px arial;
+        }
+        .myform{
+          width:60%;
+          margin:auto;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="link1">Home</a></li>
+        <li><a href="aboutpage.html" id="link1">About</a></li>
+        <li><a href="#" id="link1">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="myform">
+      <section>
+        <h1><span>Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us.</p>
+      </section>
+      <form action="#" method="post">
+        <div id="formsection">
+        <label>Name</label><br>
+        <input type="text" name="Person_name">
+        </div>
+        <div id="formsection">
+        <label>Email</label><br>
+        <input type="email" name="email">
+        </div>
+        <div id="formsection">
+        <label>Message</label><br>
+        <textarea name="message"></textarea>
+        </div>
+        <div id="formsection">
+        <input type="submit" name="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+      <div class="container2">
+        <div class="box1">
+          <i class="fas fa-3x fa-hotel"></i>
+          <p id="tags">Location</p>
+          <p>50 Main St, Boston MA</p>
+        </div>
+        <div class="box1">
+          <i class="fas fa-3x fa-phone"></i>
+          <p id="tags">Phone Number</p>
+          <p>(617)-555-5555</p>
+        </div>
+        <div class="box1">
+          <i class="fas fa-3x fa-envelope"></i>
+          <p id="tags">Email Address</p>
+          <p>frontdesk@hotelbt.co</p>
+        </div>
+      </div>
+      <footer>
+        <p>Hotel BT &copy;2019, All Rights Reserved</p>
+      </footer>
+  </body>
+</html>

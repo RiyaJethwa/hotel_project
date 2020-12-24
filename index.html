@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="webfonts" rel="stylesheet">
+    <style>
+      body{
+        margin:0;
+      }
+
+      #link1{
+        text-decoration:none;
+        color:white;
+        font-family:arial;
+      }
+      nav ul{
+        padding:0;
+        margin:0;
+        list-style-type:none;
+        display:flex;
+        justify-content:flex-end;
+        padding-right:100px;
+        background-color:#000000;
+      }
+      nav ul li{
+        padding:20px 10px;
+        color:white;
+      }
+      #link1:hover{
+        color:orange;
+      }
+      li:hover{
+        background-color:darkslategrey;
+        color:orange
+      }
+      @media(max-width:786px){
+        nav ul{
+          flex-direction:column;
+          padding:0;
+          text-align:center;
+        }
+      }
+      .intro{
+        height: 600px;
+        background-image: url('img/introimg.jpg');
+        background-position:center;
+        background-size:cover;
+        position:relative;
+        opacity:0.8;
+      }
+      .introtext{
+        text-align:center;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+      }
+      .introtext h1{
+        font:bold 70px arial;
+        color:white;
+        background-color:rgba(240,240,240,0.2);
+
+      }
+      #sp1{
+        color:orange;
+      }
+      .introtext p{
+        font-size:15px;
+        font-family:arial;
+        font:540 15px arial;
+        color:white;
+        background-color:rgba(240,240,240,0.2);
+      }
+      #bt1{
+        font-size:15px;
+        font-family:arial;
+        padding:10px;
+        background-color:black;
+        color:white;
+        border:none;
+      }
+      .container1{
+        background-image:url('img/img1.jpg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size:cover;
+        text-align:center;
+        height:500px;
+        opacity:0.8;
+        position:relative;
+        overflow:auto;
+
+      }
+      #para1{
+        padding:30px;
+        color:white;
+        flex:1;
+        margin-top:0.5px;
+        position:absolute;
+        top:50%;
+        transform:translatey(-50%);
+      }
+      #para1 h2{
+        font:bold 40px arial;
+      }
+      #para1 h2 span{
+        color:orange;
+      }
+      #para1 p{
+        font:500 20px arial;
+      }
+      #bt2{
+        font:600 15px arial;
+        padding:10px;
+        border:none;
+        color:black;
+        background-color:lightgrey;
+      }
+      @media(min-width:786px){
+      .container2{
+        display:flex;
+      }
+      }
+      .box1{
+        padding:30px;
+        text-align:center;
+        font:500 15px arial;
+      }
+      .box2{
+        padding:30px;
+        text-align:center;
+        background-color:rgba(255,165,0,0.7);
+        font:500 15px arial;
+      }
+      #tags{
+        font-weight:700;
+      }
+      footer{
+        text-align:center;
+        color:white;
+        background-color:black;
+        font:500 15px arial;
+        margin:0;
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="#" id="link1">Home</a></li>
+        <li><a href="aboutpage.html" id="link1">About</a></li>
+        <li><a href="contactpage.html" id="link1">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="intro">
+      <div class="introtext">
+        <h1><span id="sp1">Enjoy</span> Your Stay</h1>
+        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <button id="bt1">About our Hotel</button>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div id="para1">
+        <h2><span>The History</span> Of Our Hotel</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <button id="bt2">Read More</button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="box1">
+        <i class="fas fa-3x fa-hotel"></i>
+        <p id="tags">Great Location</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Tempore, dolores?</p>
+      </div>
+      <div class="box2">
+        <i class="fas fa-3x fa-utensils"></i>
+        <p id="tags">Free Meals</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic, nequel</p>
+      </div>
+      <div class="box1">
+        <i class="fas fa-3x fa-dumbbell"></i>
+        <p id="tags">Fitness Room</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Tempore, dolores?</p>
+      </div>
+    </div>
+    <footer>
+      <p>Hotel BT &copy;2019, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
